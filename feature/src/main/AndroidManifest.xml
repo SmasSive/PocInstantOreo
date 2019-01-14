@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.anuntis.fotocasa.pocinstantoreo.feature">
+
+    <application>
+        <activity android:name="com.anuntis.fotocasa.pocinstantoreo.feature.FeatureActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:host="poc"/>
+                <data android:pathPrefix="/poc_detail"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <meta-data
+                    android:name="default-url"
+                    android:value="http://poc/poc_detail" />
+        </activity>
+    </application>
+
+</manifest>
